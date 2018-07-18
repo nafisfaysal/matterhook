@@ -1,7 +1,4 @@
-# matterhook
-
-## Features
-* Send plain text and message with attachments
+# Matterhook
 
 
 ## Installation
