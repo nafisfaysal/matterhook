@@ -1,5 +1,6 @@
 # Matterhook
 
+Simple Go client for [Mattermost's webhooks API](https://www.mattermost.org/webhooks/).
 
 ## Installation
 ```sh
