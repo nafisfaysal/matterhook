@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	matterhook "github.com/NafisFaysal/mattermost/mattermost"
+	matterhook "github.com/nafisfaysal/mattermost/mattermost"
 )
 
 func main() {
