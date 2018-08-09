@@ -1,4 +1,4 @@
-package mattermost
+package matterhook
 
 import (
 	"bytes"
