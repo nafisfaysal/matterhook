@@ -2,24 +2,40 @@ package main
 
 import (
 	"fmt"
-	matterhook "github.com/nafisfaysal/mattermost/mattermost"
+	"github.com/nafisfaysal/matterhook"
 )
 
 func main() {
 	weebhokURL := "https://matterhook.com/3423knkldv323"
-        
-	var msg matterhook.Message
-	var attachment matterhook.Attachment
-	attachment.Pretext = "Hello"
-	attachment.Text = "No One"
-	attachment.Title = "Test Title OIYOT"
-	attachment.TitleLink = "https://www.google.com/"
 
-	var AnotherAttachment matterhook.Attachment
-	AnotherAttachment.Text = "New att"
-	AnotherAttachment.Title = "Test Title WRERWREGWER"
-	AnotherAttachment.TitleLink = "google.com"
-	msg.AddAttachments([]matterhook.Attachment{attachment, AnotherAttachment})
+	var msg matterhook.Message
+
+	attachment := matterhook.Attachment{
+		Text:  "Attact Text",
+		Title: "Attact Title",
+		Fields: []matterhook.Field{
+			{
+				Title: "Attach field Title",
+			},
+		},
+	}
+
+	anotherAttachment := matterhook.Attachment{
+		Text:       "Hello",
+		Title:      "No title",
+		AuthorName: "nafis",
+		AuthorIcon: "give author icon",
+		Fields: []matterhook.Field{
+			{
+				Title: "Filed Title",
+				Value: "Some value",
+				Short: true,
+			},
+		},
+	}
+
+	msg.AddAttachments([]matterhook.Attachment{attachment, anotherAttachment})
+
 	err := matterhook.Send(weebhokURL, msg)
 	if err != nil {
 		fmt.Println(err)
