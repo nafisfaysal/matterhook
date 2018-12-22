@@ -25,7 +25,7 @@ Basic text message
 
 Send message with attachments
 ```go
-    weebhokURL := "https://matterhook.com/3423knkldv323"
+    webhookURL := "https://matterhook.com/3423knkldv323"
   
     var msg matterhook.Message
     
@@ -55,7 +55,7 @@ Send message with attachments
     
     msg.AddAttachments([]matterhook.Attachment{attachment, anotherAttachment})
     
-    err := matterhook.Send(weebhokURL, msg)
+    err := matterhook.Send(webhookURL, msg)
     if err != nil {
         fmt.Println(err)
     }
