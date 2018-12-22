@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	weebhokURL := "https://matterhook.com/3423knkldv323"
+	webhokURL := "https://matterhook.com/3423knkldv323"
 
 	var msg matterhook.Message
 
@@ -36,7 +36,7 @@ func main() {
 
 	msg.AddAttachments([]matterhook.Attachment{attachment, anotherAttachment})
 
-	err := matterhook.Send(weebhokURL, msg)
+	err := matterhook.Send(webhokURL, msg)
 	if err != nil {
 		fmt.Println(err)
 	}
