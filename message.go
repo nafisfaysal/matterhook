@@ -9,7 +9,7 @@ type Message struct {
 }
 
 type Attachment struct {
-	Text     string `json:"text"`
+	Text     string `json:"text,omitempty"`
 	Fallback string `json:"fallback,omitempty"`
 	Pretext  string `json:"pretext,omitempty"`
 
