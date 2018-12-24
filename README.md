@@ -61,5 +61,8 @@ Send message with attachments
     }
 ```
 
+## Contribution
+If you are interested to make the package better please send pull requests or create an issue so that others can fix.
 
-Contributions are very welcome.
+## License
+The **matterhook** is an open-source software licensed under the [MIT License](LICENSE).
