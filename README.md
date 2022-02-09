@@ -2,7 +2,7 @@
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/nafisfaysal/matterhook)](https://goreportcard.com/report/github.com/nafisfaysal/matterhook)
 
-Simple Go client for [Mattermost's WebHooks API](https://www.mattermost.org/webhooks/).
+A Go client for Mattermost's webhooks API [Mattermost's WebHooks API](https://www.mattermost.org/webhooks/).
 
 ## Installation
 ```sh
