@@ -6,7 +6,7 @@ A Go client for Mattermost's webhooks API [Mattermost's WebHooks API](https://ww
 
 ## Installation
 ```sh
-$ go get -u https://github.com/nafisfaysal/matterhook
+$ go get -u github.com/nafisfaysal/matterhook
 ```
 
 ## Usage
